@@ -7,12 +7,10 @@ Este repositório tem como objetivo reunir as atividades da disciplina de Progra
 <strong>C</strong>
 
 <h2>Exercícios:</h2
+<h3>Comando básicos:</h3>
 <ul>
-  <li><h3>Comando básicos:</h3></li>
-  <ul>
-    <li>Exercício 1: Calcular a Área de um triângulo;</li>
-    <li>Excícicio 2: Ler nome, sexo e idade de uma pessoa e verificar se ela é mulher;</li>
-    <li>Excícicio 3: Calcular reajuste de 10% em um salário;</li>
-    <li>Excícicio 4: Calcular a porcentagem do garçom em uma conta;</li>
-   </ul>
-</ul>
+  <li>Exercício 1: Calcular a Área de um triângulo;</li>
+  <li>Excícicio 2: Ler nome, sexo e idade de uma pessoa e verificar se ela é mulher;</li>
+  <li>Excícicio 3: Calcular reajuste de 10% em um salário;</li>
+  <li>Excícicio 4: Calcular a porcentagem do garçom em uma conta;</li>
+ </ul>
