@@ -8,7 +8,7 @@ Este repositório tem como objetivo reunir as atividades da disciplina de Progra
 
 <h2>Exercícios:</h2
 <ul>
-  <li><strong>Comando básicos:</strong></li>
+  <li><h3>Comando básicos:</h3></li>
   <ul>
     <li>Exercício 1: Calcular a Área de um triângulo;</li>
     <li>Excícicio 2: Ler nome, sexo e idade de uma pessoa e verificar se ela é mulher;</li>
