@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 int compara(int x, int y){
 
@@ -34,18 +35,45 @@ int compara(int x, int y){
     }
 }
 
-int main (){
-	int x, y;
+int segmento(int x, int y){
+
+    if (y > x)
+		return 0;
+
+    else{
+
+        if (compara(x, y))
+			return 1;
+
+        else
+			x = x/10;
+
+        while(x > 0){
+
+            if (compara(x, y))
+				return 1;
+            else{
+
+                x = x/10;
+            }
+        }
+
+        return 0;
+
+    }
+}
+
+int main(){
+
+    int x, y;
 	
 	printf("Digite valores para x e y: ");
 	scanf("%d %d", &x, &y);
 	
-	if(compara(x, y)!=0)
-		printf("Os valores se correspondem");
+	if(segmento(x, y)==0)
+		printf("\nEh um segmento");
 	else
-		printf("Os valores nao se correspondem");
-	
-	
-	
+		printf("\nNao eh um segmento");
+
 	return 0;
 }

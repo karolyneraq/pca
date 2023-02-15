@@ -1,4 +1,3 @@
-//Não terminado
 #include <stdio.h>
 
 int contar(int n, int d){
@@ -11,25 +10,52 @@ int contar(int n, int d){
 	return cont;
 }
 
-void permutacao(int a, int b){
-	
+int permutacao(int a, int b){
+	int aux, d, permut = 0;
+
+    if (a > b){
+		aux = a;
+	}
+
+    else{
+		aux = b;
+	}
+
+    d = aux%10;
+
+    while (aux > 0){
+
+        if (contar(a, d) != contar(b, d)){
+
+            permut++;
+            break;
+        
+        }
+
+        aux = aux/10;
+        d = aux%10;
+
+    }
+
+    return permut;
+
 }
 
 int main(){
-	int n, d, cont=0;
+	int n, d, p=0;
 	
 	printf("Digite um numero: ");
 	scanf("%d", &n);
 	
-	printf("Digite um numero maior que zero e menor que 9: ");
+	printf("Digite mais um numero: ");
 	scanf("%d", &d);
 	
-	cont = contar(n, d);
+	p = permutacao(n, d);
 	
-	if(cont==1)
-		printf("O digito %d aparece %d vez em %d", d, cont, n);
+	if(p==0)
+		printf("O number %d eh uma permutacao de %d", n, d);
 	else
-		printf("O digito %d aparece %d vezes em %d", d, cont, n);
+		printf("\nO numero %d nao eh uma permutacao de %d", n, d);
 	
 	return 0;
 }
